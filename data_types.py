@@ -66,7 +66,61 @@ multiline = "        " +  multiline
 #print(len(multiline))
 
 #Build a menu (in my case, armory)
-title = "Middle-earth's Armory".upper()
-title_with_header = title.center(20, "=")
+title = "Middle-earth Armory".upper()
+title_with_header = title.center(50, "=")
 print(title_with_header)
-print(title.center(20, "="))
+print("Glamdring".ljust(20, ".")+ "$7".rjust(0))
+print("Aeglos".ljust(20, ".")+ "$10".rjust(0))
+print("Herugrim".ljust(20, ".")+ "$3".rjust(0))
+
+
+#String Index Values ---- Indexes start at 0!
+print(first[1])
+print(first[-1]) #this gives you the last value in a string
+print(first[1:-1])
+print(first[3:-1])
+
+#Some methods return Boolean data (true or false)
+print(first.startswith("L")) or print(first.endswith("D"))
+
+#Boolean data type
+myvalue = True
+x = bool(False)
+print(type(x))
+print(isinstance(myvalue, bool))
+
+###Numeric Data Types###
+
+#Integers
+price = 100
+bestprice = (100)
+print(type(price))
+print(isinstance(bestprice, int))
+
+#Float Type
+gpa = 3.84
+y = float(1.14)
+print(gpa, y)
+
+#complex value
+comp_value = 5+3j
+print(type(comp_value)) 
+print(comp_value.real)
+print(comp_value.imag)
+
+#Built-in functions for numbers
+print(abs(gpa))
+print(round(gpa))
+print(round(gpa, 1))
+
+import math
+
+print(math.pi)
+print(math.sqrt(64))
+print(math.ceil(3.20))
+print(math.floor(3.2))
+
+#Casting a string to a number
+zipcode = "1100"
+zip_value = int(zipcode)
+print(type(zip_value))
