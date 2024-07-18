@@ -65,4 +65,22 @@ mycopy2 = nums[:]
 
 #all of the above are copies of the origianl nums list
 
-#Tuples 
+#Tuples - very similar to lists, data inside and the order can't be changed.
+
+mytuple = tuple(('Elrond', 335, False))
+tuple2 = (1, 5, 3, 5, 3, 3)
+print(type(mytuple))
+print(type(tuple2))
+
+#Adding a value to a tuple (can only be done by creating a new copy of latter tuple) This is called "packing" the tuple.
+newlist = list(mytuple)
+newlist.append('Grond')
+newtuple = tuple(newlist)
+print(newtuple)
+
+(one, two, *sike) = tuple2 # the * assigns to that variable all the other remaining objects in the tuple
+print(one)
+print(two)
+print(sike)
+
+print(tuple2.count(3)) # counts the number of the same objects in a tuple
