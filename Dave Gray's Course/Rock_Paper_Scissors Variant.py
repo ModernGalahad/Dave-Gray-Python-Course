@@ -45,10 +45,13 @@ while play_again:
         print("🐍 Python wins!")
     
     playagain = input("Do you want to play again? (y/n)\n")
-    if playagain.lower() == y:
-        
+    if playagain.lower() == "y":
+        play_again = True
+    elif playagain.lower() == "n":
+        play_again = False
+        print("\nThank you for playing!\n")
 
-
+sys.exit("Goodbye!")
 
 
 
